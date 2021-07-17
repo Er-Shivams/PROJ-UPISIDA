@@ -7,34 +7,34 @@ import logo from "./assets/images/upsida_logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    
+
     <Nav >
-      
+
     <Logo href="">  <img src={logo} alt = "Logo"/> </Logo>
-   
-      {/* <Menu1 isOpen={isOpen}> 
-        
+
+      {/* <Menu1 isOpen={isOpen}>
+
      </Menu1>    */}
       <Tiles onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
         <span />
       </Tiles>
-      
+
       <Menu isOpen={isOpen}>
         <MenuLink href="">Home</MenuLink>
         <MenuLink href="">About</MenuLink>
-        <MenuLink href="">Contact Us</MenuLink>                
+        <MenuLink href="">Contact Us</MenuLink>
         <MenuLink href="">Web Mail</MenuLink>
         <MenuLink href=""><Button> Office Login </Button></MenuLink>
-        
-       
+
+
       </Menu>
     </Nav>
-         
-            
-     
-  
+
+
+
+
   );
 };
 
@@ -43,7 +43,7 @@ export default Navbar;
 
 const Button = styled.button`
   cursor: pointer;
-  background: #082A91;
+  background: red;
   color: white;
   font-weight: bold;
   font-size: 0.9em;
@@ -71,7 +71,7 @@ const MenuLink = styled.a`
    @media (max-width: 768px) {
     color: #bfbfbf;
     ${'' /* padding: 1rem 1rem; */}
-   
+
   }
 `;
 const Menu = styled.div`
@@ -86,7 +86,7 @@ const Menu = styled.div`
     width: 100%;
     max-height: ${({ isOpen }) => (isOpen ? "450px" : 0)};
     transition: max-height 0.3s ease-in;
- 
+
   }
 `;
 
@@ -114,13 +114,13 @@ const Logo = styled.a`
   border-style: solid; */}
   ${'' /* padding: 2rem; */}
   ${'' /* padding: 0 2rem; */}
-  
+
    @media (max-width: 1424px) {
     display: flex;
     margin-left:0;
   }
 
- 
+
 `;
 
 
