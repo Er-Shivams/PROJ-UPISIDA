@@ -2,28 +2,43 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import Body from "./Body";
-// import image1 from "./bg-boost-desktop.svg";
-import Card from "./Card";
-
-
+import Investor from "./Investor"
+import Background from "./components/Background.js";
+import { jsx } from "@emotion/react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import  FooterContainer  from "./containers/footer";
 const App = () => {
-  return (
-    <Container>
   
+  return (
+  
+    <CContainer>
              <Navbar />
+             <Background />
              <Body />
-        
-         
-    </Container>
+             <Investor/>
+             <FooterContainer/>
+    </CContainer>
+    
+
+
+    
   );
 };
 
 export default App;
 
-const Container = styled.div`
-  background: #082A91;
-  height: 100vh;
+const CContainer = styled.div`
+ height: auto;
+ width: auto;
+
+
 `;
+// const Body = styled.div`
+//   min-height:100vh;
+
+  
+
+// `;
 
 // const Image1 = styled.section`
     
@@ -35,3 +50,4 @@ const Container = styled.div`
   
   
 // `;
+

@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
-// import image1 from "./illustration-working.svg";
 
+import LinkBar from "./components/LinkBar";
+import Services from "./components/Services";
+import KeyPeople from "./components/KeyPeople";
+import Card from './util/Card';
+import Avatar from './util/Avatar';
+import icon from './assets/images/internet.png';
+import './Body.css';
 
 const Body = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <h1>UPSIDA PROJECT</h1>
+    <div className="body-div">
+      <LinkBar />
+      <Services />
+      <KeyPeople />
     </div>
   );
 };

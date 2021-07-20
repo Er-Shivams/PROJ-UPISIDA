@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./assets/images/upsida_logo.png";
-// import image1 from "./illustration-working.svg";
-
-
+import About from "./About.js"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     
     <Nav >
       
-    <Logo href="">  <img src={logo} alt = "Logo"/> </Logo>
+    <Logo href="./About.js">  <img src={logo} alt = "Logo"/> </Logo>
    
-      {/* <Menu1 isOpen={isOpen}> 
-        
-     </Menu1>    */}
+     
       <Tiles onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
@@ -78,7 +74,7 @@ const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  ${'' /* position: relative; */}
   ${'' /* margin-right: 4rem; */}
   @media (max-width: 1424px) {
     overflow: hidden;
@@ -102,6 +98,7 @@ const Nav = styled.div`
   left: 0;
   right: 0;
   border-width: 10px;
+  ${'' /* width: 100%; */}
 `;
 
 
@@ -109,7 +106,7 @@ const Logo = styled.a`
   ${'' /* font-size: 1.7rem; */}
   margin-left: 5rem;
   ${'' /* object-fit: contain; */}
-  width: 10px;
+  ${'' /* width: 10px; */}
   ${'' /* border-width: 10px;
   border-style: solid; */}
   ${'' /* padding: 2rem; */}
