@@ -25,47 +25,85 @@ function Investor() {
     return (
         // height:"1000px", width:"100%"
         <div className="main">
-                   <div className="text-main">
-                    <h2>Investor friendly Reforms </h2>
-                     <p > Promoting Industrial Progress with a plethora of investor friendly reforms </p>
-                  </div>
-
-                                    <div className="news-tendor1">
+                                    <div className="text-main">
+                                        <h2>Investor friendly Reforms </h2>
+                                        <p > Promoting Industrial Progress with a plethora of investor friendly reforms </p>
+                                    </div>
+                                <div className="main1">
+                                <div className="alert">
+                                    <div className="news_tendor">
                                    
                                             <p >Newsletter</p>
                                          
                                             
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
+                                                        <hr />
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
                                                         
-                                                
-                                       
-                                            
+                                                        
+                                                        
+                                     
                                     </div>
-                                    <div className="news-tendor2">
+                                    <div className="news_tendor">
                                    
                                             <p >News and Tenders</p>
                                            
                                                    
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
-                                                        <a href="#link1" className="">Link1<br/></a>
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
+                                                        <hr />
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
+                                                        <hr />
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
+                                                        <hr />
+                                                        <a href="#link1" className="Links">Link1
+                                                        <span>Date : 01/07/2020</span></a>
+                                                      
                                                         
                                                 
-                                                        
-                                                        
-                                                
+
                                        
                                             
                                     </div>
-              
+                                </div>
+                                    <div className="Container">
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                                            <div className="cardImg">
+                                                <div className="faded"> 
+                                                    Trans Ganga City, UNNAO
+                                                </div>
+                                            </div>
+                    
+                                    </div>
+                                 </div>   
                                 {/* <div className="img-container">
 
                                     <div className="content">
@@ -176,3 +214,6 @@ function Investor() {
 }
 
 export default Investor;
+
+
+

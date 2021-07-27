@@ -7,6 +7,7 @@ import Background from "./components/Background.js";
 import { jsx } from "@emotion/react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  FooterContainer  from "./containers/footer";
+// import LinkBar from "./components/LinkBar";
 const App = () => {
   
   return (

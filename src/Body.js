@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import styled from "styled-components";
-
 import LinkBar from "./components/LinkBar";
 import Services from "./components/Services";
 import KeyPeople from "./components/KeyPeople";
