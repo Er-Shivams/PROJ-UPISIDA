@@ -1,11 +1,16 @@
 import React from 'react'
+import styled from "styled-components";
 
-function About() {
+export const About = () => {
     return (
         <div>
-            <h4>Hello world</h4>
+            <Heading ></Heading>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, nam. Omnis, dignissimos. Amet eaque minus cupiditate deleniti esse qui sed doloribus tenetur non, iure eius mollitia, architecto est! Reprehenderit voluptatem reiciendis corrupti dicta! Hic?</p>
         </div>
     )
 }
 
-export default About;
+
+const Heading = styled.h4`
+    margin-top:50%;
+`

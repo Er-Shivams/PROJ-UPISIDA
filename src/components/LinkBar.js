@@ -1,18 +1,18 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 import './LinkBar.css';
 
 const LinkBar= () =>{
     return (
       <div className="link-bar">
         <div className="links">
-          <a>Industrial Info</a>
-          <a>Policies</a>
-          <a>GIS</a>
-          <a>E-Services</a>
-          <a>Office Orders</a>
-          <a>Resource Centre</a>
-          <a>Available Plot</a>
+          <a> <Link>Industrial Info</Link> </a>
+          <a><Link>Policies</Link></a>
+          <a><Link>GIS</Link></a>
+          <a><Link to ="/eServices">E-Services</Link></a>
+          <a><Link>Office Orders</Link></a>
+          <a><Link>Resource Centre</Link></a>
+          <a><Link>Available Plot</Link></a>
         </div>
       </div>
     );

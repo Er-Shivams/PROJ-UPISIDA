@@ -1,5 +1,4 @@
 .linkbar{
-    margin:0;
     width: 100%;
     height: 40px;
     display: flex;
@@ -18,6 +17,8 @@
 
 .links a{
     display: inline-block;
-    margin: 2px 20px;
+    margin: 2px 15px;
     text-align: center;
+    color: black;
+    font-weight: semi-bold;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./assets/images/upsida_logo.png";
-import About from "./About.js"
+import {Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -18,11 +18,11 @@ const Navbar = () => {
       </Tiles>
       
       <Menu isOpen={isOpen}>
-        <MenuLink href="">Home</MenuLink>
-        <MenuLink href="">About</MenuLink>
-        <MenuLink href="">Contact Us</MenuLink>                
-        <MenuLink href="">Web Mail</MenuLink>
-        <MenuLink href=""><Button> Office Login </Button></MenuLink>
+        <Link to="/"><MenuLink to="">Home</MenuLink></Link>
+        <Link to="/about"> <MenuLink >About</MenuLink></Link>
+        <MenuLink to="">Contact Us</MenuLink>                
+        <MenuLink to="">Web Mail</MenuLink>
+        <MenuLink to=""><Button> Office Login </Button></MenuLink>
         
        
       </Menu>

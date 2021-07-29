@@ -7,18 +7,41 @@ import Background from "./components/Background.js";
 import { jsx } from "@emotion/react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  FooterContainer  from "./containers/footer";
+import {About} from "./About.js"
+import {EServices} from "./eServices.js"
 // import LinkBar from "./components/LinkBar";
 const App = () => {
   
   return (
   
-    <CContainer>
-             <Navbar />
-             <Background />
-             <Body />
-             <Investor/>
-             <FooterContainer/>
-    </CContainer>
+     <Router> 
+     <CContainer>
+   
+
+            <Navbar />
+           
+             <Switch>
+                <Route exact path="/" render={()=>{
+                  return(<>
+                          
+                          <Background />
+                          <Body />
+                          <Investor/>
+                          
+                          </>
+                        )}}>
+                </Route>
+                <Route exact path="/about">
+                  <About />
+                </Route>
+                <Route exact path="/eservices">
+                  <EServices />
+                </Route>
+            </Switch>
+             
+        <FooterContainer/>
+    </CContainer>     
+    </Router> 
     
 
 

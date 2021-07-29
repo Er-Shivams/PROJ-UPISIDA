@@ -2,12 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
  ${'' /* padding:80px 80px; */}
- ${'' /* width:100%; */}
- border-style: solid;
  width:100%;
- top:0;
- position:stick;
- 
+ border-style: solid;
+ top: 0;
+ position:sticky;
+
 `
 
 
@@ -19,6 +18,7 @@ max-width: 3000px;
 margin: auto;
 height: auto;
 justify-content: column;
+
 
 
 
