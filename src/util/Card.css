@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-.container {
+.container1 {
   background-image: url("../assets/images/rect.png");
   width: 100%;
   margin: 50px 0;
@@ -17,7 +17,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.card {
+.card1 {
   margin: 1.8rem;
   width: 15rem;
   height: 7rem;
@@ -31,7 +31,7 @@
 
 
 
-.card:hover{
+.card1:hover{
   margin-top: 20px;
 }
 

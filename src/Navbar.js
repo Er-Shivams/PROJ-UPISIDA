@@ -21,10 +21,8 @@ const Navbar = () => {
         <Link to="/"><MenuLink to="">Home</MenuLink></Link>
         <Link to="/about"> <MenuLink >About</MenuLink></Link>
         <MenuLink to="">Contact Us</MenuLink>                
-        <MenuLink to="">Web Mail</MenuLink>
-        <MenuLink to=""><Button> Office Login </Button></MenuLink>
-        
-       
+        <Link ><MenuLink to="">Web Mail</MenuLink></Link>
+        <Link to="/officeLogin"><MenuLink><Button> Office Login </Button></MenuLink></Link>
       </Menu>
     </Nav>
          
@@ -45,7 +43,7 @@ const Button = styled.button`
   font-size: 0.9em;
   width:8rem;
   height:2.5rem;
-  border-radius: 10px;
+  border-radius:3px;
   &:hover {
     color: #35323e;
   }

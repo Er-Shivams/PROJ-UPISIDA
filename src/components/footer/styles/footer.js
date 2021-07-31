@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
- ${'' /* padding:80px 80px; */}
  width:100%;
- border-style: solid;
  top: 0;
  position:sticky;
 
@@ -30,7 +28,6 @@ export const Base = styled.div`
 background-color: #082A91;
 width: 100%;     
 height: 100px;
-${'' /* top: 2968px; */}
 align-items: center;
 display: flex;
 font-weight: bold;
@@ -49,14 +46,12 @@ margin-left: 60px;
 
 export const Row = styled.div`
  display: grid;
- ${'' /* display: flex; */}
  justify-content: center;
- ${'' /* align-items: center; */}
  grid-template-column: repeat(auto-fill, minmax(250px, 1fr));
  grid-gap: 100px;
  width: 100%;
  margin: 50px auto 50px 0;
- ${'' /* padding:0 2rem; */}
+
 
  @media (max-width: 3000px) {
      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

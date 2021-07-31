@@ -1,0 +1,50 @@
+.policy-card {
+    margin: 4rem 6rem 1rem 0;
+    width: 14rem;
+    height: 20rem;
+    min-width: 12rem;
+    align-items: left;
+    text-align: left;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px #e7e7e7;
+  }
+
+  .imgCard-div{
+      width: 100%;
+      height: 85%;
+      text-align: left;
+  }
+
+  .imgCard-div img{
+      width: 90%;
+      height: 70%;
+      border-radius: 5%;
+      margin:5%;
+  }
+
+  .imgCard-div p{
+      text-align: left;
+      align-items: center;
+      margin-left: 10px ;
+  }
+
+  .button-div{
+    height: 15%;
+    width: 100%;
+}
+
+  .button-div button{
+      background-color: rgb(26, 26, 146);
+      height: 25px;
+      width: 90%;
+      margin: 5%;
+      color: white;
+      border: white;
+      border-radius: 5%;
+  }
+
+  .policy-card:hover{
+    box-shadow: 5px 5px 30px rgb(160, 157, 157);
+  }

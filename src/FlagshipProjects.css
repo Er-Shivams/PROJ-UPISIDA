@@ -1,0 +1,17 @@
+.flag_project{
+    width: 90%;
+    margin: 15% 5% 10% 5%;
+}
+
+.flag_title{
+    width: 100%;
+    height: 60px;
+    background-color: #cac7c7;
+    text-align: center;
+    align-items: center;
+}
+
+.flag_title h2{
+    font-weight: 400;
+    padding-top: 10px;
+}

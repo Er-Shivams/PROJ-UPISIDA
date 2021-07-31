@@ -10,7 +10,7 @@ import Card from "../util/Card";
 
 const Services= () =>{
     return (
-      <div class="container">
+      <div className="container1">
         <Card
           image={OnlineS}
           name="Online Services"

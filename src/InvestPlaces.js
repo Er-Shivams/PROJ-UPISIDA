@@ -1,8 +1,17 @@
 import React from 'react'
+import "./investor.css"
 function InvestPlaces(props) {
     return (
-      <div> 
-            {/* <div style={{ 
+  
+
+
+         
+                <div className="cardImg" style={{backgroundImage: `url(${props.backImage})`}}>
+                    <div className="faded"> 
+                        {props.info}
+                    </div>
+               
+                   {/* <div style={{ 
                     backgroundImage: `url(${props.backImage})`, 
                     backgroundRepeat: 'no-repeat',
                     width:"100vh", 
@@ -30,7 +39,9 @@ function InvestPlaces(props) {
           </div>
         
           </div> */}
-    </div>
+          </div>
+         
+
     )
 }
 

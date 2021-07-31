@@ -2,10 +2,14 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 import "./Background.css";
 import Button from "../util/Button";
-
 const Background = () =>{
   return (
     <div className="img-div">
+                <div className="info">
+                <marquee>
+                  🔴 Expression of Interest (EOI) For Setting up of Hospitals, Schools, Flatted Factories, Warehouses, Industries, Group Housing, Sports Stadium, Golf Course with Club House, 5 Star Hotels or any other Real Estate Project in the Future Smart Cities - Trans Ganga City, Unnao near Kanpur & Saraswati Hi-Tech City, Prayagraj
+                </marquee>
+                </div>
       <div className="img-content">
         <Typewriter 
             options={{

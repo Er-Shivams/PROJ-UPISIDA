@@ -2,7 +2,6 @@
     background-color:"#F3F6FA";
     height:auto;
     width:"auto";
-    border:1px solid;
    
 }
 .main1{
@@ -25,13 +24,13 @@
         }
 
     }
-.img-container{
+/* .img-container{
     background-image: url("./assets/images/image1.png");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vh;
 
-}
+} */
 .content{
     backdrop-filter: blur(8px);
     color: black;
@@ -78,11 +77,8 @@
 
 
 .news_tendor > a{
-
         display: flex;
-        padding:10px 20px;
-        
-        
+        padding:10px 20px;      
 }
 
 
@@ -113,11 +109,7 @@
     background-color:#eee;
     width: 340px;
     height: 185px;
-    background:url("./assets/images/image1.png");
     margin: 20px auto;
-    
-   
-
 }
 .faded{
     position: absolute;
@@ -143,6 +135,6 @@ span{
 .Links{
     display:flex;
     flex-direction: column;
-   
+    padding: 0;
     
 }

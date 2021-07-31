@@ -4,7 +4,7 @@ import "./Card.css";
 
 const Card = (props) => {
   return (
-      <div class="card">
+      <div class="card1">
         <div className="card-image">
           <Avatar
             image={props.image}

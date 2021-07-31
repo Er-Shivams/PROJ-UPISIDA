@@ -9,25 +9,24 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  FooterContainer  from "./containers/footer";
 import {About} from "./About.js"
 import {EServices} from "./eServices.js"
-// import LinkBar from "./components/LinkBar";
+import {Login} from "./officeLogin.js";
+import Policies from "./Policies.js";
+import FlagshipProjects from "./FlagshipProjects.js";
+import OfficeOrders from "./OfficeOrders.js";
+
 const App = () => {
   
   return (
   
      <Router> 
      <CContainer>
-   
-
             <Navbar />
-           
              <Switch>
                 <Route exact path="/" render={()=>{
                   return(<>
-                          
                           <Background />
                           <Body />
                           <Investor/>
-                          
                           </>
                         )}}>
                 </Route>
@@ -37,6 +36,19 @@ const App = () => {
                 <Route exact path="/eservices">
                   <EServices />
                 </Route>
+                <Route exact path="/officeLogin">
+                    <Login />
+                </Route>
+                <Route exact path="/policies">
+                    <Policies />
+                </Route>
+                <Route exact path="/flagship">
+                    <FlagshipProjects />
+                </Route>
+                <Route exact path="/officeOrder">
+                    <OfficeOrders />
+                </Route>
+
             </Switch>
              
         <FooterContainer/>
@@ -57,21 +69,5 @@ const CContainer = styled.div`
 
 
 `;
-// const Body = styled.div`
-//   min-height:100vh;
 
-  
-
-// `;
-
-// const Image1 = styled.section`
-    
-//    padding: 50px 0 50px 0 ;
-//    margin-left: 15rem;
-   
-   
-  
-  
-  
-// `;
 

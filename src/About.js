@@ -1,16 +1,29 @@
 import React from 'react'
 import styled from "styled-components";
-
+import {AboutContainer} from './containers/about'
+import LinkBar from './components/LinkBar';
 export const About = () => {
     return (
         <div>
-            <Heading ></Heading>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, nam. Omnis, dignissimos. Amet eaque minus cupiditate deleniti esse qui sed doloribus tenetur non, iure eius mollitia, architecto est! Reprehenderit voluptatem reiciendis corrupti dicta! Hic?</p>
+            <Heading >
+               <LinkBar/>
+            </Heading>
+            <AboutContainer/>
         </div>
     )
 }
 
 
-const Heading = styled.h4`
-    margin-top:50%;
+
+
+const Heading = styled.div`
+    margin-top:4.2%;
+    background-color:#F9FBFF;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
 `
