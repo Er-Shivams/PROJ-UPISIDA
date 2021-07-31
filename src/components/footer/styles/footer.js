@@ -33,6 +33,11 @@ display: flex;
 font-weight: bold;
 font-size: 14px;
 
+@media only screen and (max-width: 600px){
+    padding-top: 40px;
+    padding-bottom: 20px
+}
+
 `
 
 

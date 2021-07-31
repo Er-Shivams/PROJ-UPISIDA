@@ -64,7 +64,6 @@ const MenuLink = styled.a`
   }
    @media (max-width: 768px) {
     color: #bfbfbf;
-    ${'' /* padding: 1rem 1rem; */}
    
   }
 `;
@@ -72,8 +71,6 @@ const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ${'' /* position: relative; */}
-  ${'' /* margin-right: 4rem; */}
   @media (max-width: 1424px) {
     overflow: hidden;
     flex-direction: column;
@@ -85,7 +82,7 @@ const Menu = styled.div`
 `;
 
 const Nav = styled.div`
-  padding: 0 2rem;
+  padding: 24px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,24 +93,26 @@ const Nav = styled.div`
   left: 0;
   right: 0;
   border-width: 10px;
-  ${'' /* width: 100%; */}
+  
 `;
 
 
 const Logo = styled.a`
-  ${'' /* font-size: 1.7rem; */}
-  margin-left: 5rem;
-  ${'' /* object-fit: contain; */}
-  ${'' /* width: 10px; */}
-  ${'' /* border-width: 10px;
-  border-style: solid; */}
-  ${'' /* padding: 2rem; */}
-  ${'' /* padding: 0 2rem; */}
-  
-   @media (max-width: 1424px) {
+
+  margin-left: 5rem; 
+  @media (max-width: 1424px) {
     display: flex;
     margin-left:0;
+    margin-top:0;
+    height: 3rem;
+    width: 3rem;
   }
+  @media (max-width: 624px) {
+
+      height: 2rem;
+      width: 2rem;  
+
+   }
 
  
 `;
@@ -128,14 +127,14 @@ const Tiles = styled.div`
     height: 2px;
     width: 25px;
     background: #7b7fda;
-    margin-bottom: 4px;
+    margin-bottom: -15px;
     border-radius: 5px;
   }
   @media (max-width: 1424px) {
     display: flex;
   }
     @media (max-width: 624px) {
-      margin: 4rem auto 0 auto ;
+      padding-bottom: 35px;
 
    }
 `;
