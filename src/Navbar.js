@@ -20,7 +20,7 @@ const Navbar = () => {
       <Menu isOpen={isOpen}>
         <Link to="/"><MenuLink to="">Home</MenuLink></Link>
         <Link to="/about"> <MenuLink >About</MenuLink></Link>
-        <MenuLink to="">Contact Us</MenuLink>                
+        <Link><MenuLink to="">Contact Us</MenuLink></Link>                
         <Link ><MenuLink to="">Web Mail</MenuLink></Link>
         <Link to="/officeLogin"><MenuLink><Button> Office Login </Button></MenuLink></Link>
       </Menu>
