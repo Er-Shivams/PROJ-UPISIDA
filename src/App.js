@@ -7,20 +7,21 @@ import Background from "./components/Background.js";
 import { jsx } from "@emotion/react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  FooterContainer  from "./containers/footer";
-import {About} from "./About.js"
+import About from "./About.js"
 import {EServices} from "./eServices.js"
 import {Login} from "./officeLogin.js";
 import Policies from "./Policies.js";
 import FlagshipProjects from "./FlagshipProjects.js";
 import OfficeOrders from "./OfficeOrders.js";
 import LinkBar from './components/LinkBar';
+import MainNavigation from './components/Navigation/MainNavigation';
 const App = () => {
   
   return (
   
      <Router> 
      <CContainer>
-            <Navbar />
+            <MainNavigation />
               <Heading >
                <LinkBar/>
               </Heading>
@@ -91,5 +92,7 @@ const Heading = styled.div`
     align-items: center;
     position: absolute;
     top:94px;
+   
+    
     
 `

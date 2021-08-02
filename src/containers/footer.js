@@ -68,10 +68,10 @@ function FooterContainer(props){
                 </Footer.Row>
                 <Footer.Base>
                 
-                <p style={{color:"white",fontFamily:"sans-serif",fontsize:"20px",paddingLeft:'20px'}}>Content on this website is published and managed by Uttar Pradesh State Industrial Development Authority.<br />
+                <BottomText >Content on this website is published and managed by Uttar Pradesh State Industrial Development Authority.<br />
                    For any query regarding this website, please contact the "ADMINISTRATOR".<br />
                    @ UPSIDA, U.P., India | All rights reserved.
-                </p>
+                </BottomText>
                 
             </Footer.Base>
             </Footer.Wrapper>
@@ -105,3 +105,19 @@ const Button = styled.div`
     
   }
 `;
+
+
+const BottomText = styled.p`
+    color:white;
+    font-family:sans-serif;
+    font-size:15px;
+    padding:15px 15px 0 15px;
+
+    @media (min-width:300px) and (max-width:600px){
+        font-size:10px;
+  }
+  @media (max-width:300px){
+        font-size:8px;
+  }
+`;
+

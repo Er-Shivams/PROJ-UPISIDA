@@ -1,8 +1,6 @@
 import React from "react";
 import PolicyComp from './components/PolicyComp.js';
 import './Policies.css';
-import styled from "styled-components";
-import LinkBar from './components/LinkBar';
 import  FooterContainer  from "./containers/footer";
 const IndustrialInvestment = [
   { image: "https://www.onlineupsidc.com/images/policy/p11.jpg", name: "Industrial Investment & Employment Promotion Policy of U.P. 2017 - (English)"},
@@ -57,9 +55,7 @@ const PrivatePark = [
 const Policies = () =>{
     return (
       <>
-            <Heading >
-               <LinkBar/>
-            </Heading>
+            
             <div className="policies">
               <div className="policy_header">
                 <h1>Policies</h1>
@@ -88,14 +84,3 @@ const Policies = () =>{
 
 export default Policies;
 
-const Heading = styled.div`
-    margin-top:4.2%;
-    background-color:#F9FBFF;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-`

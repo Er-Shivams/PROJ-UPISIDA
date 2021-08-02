@@ -2,9 +2,10 @@
 
 
 .policies{
-  margin-top:13%;
+  margin-top:15rem;
   width: 100%;
   background-color: #F3F6FA;
+  position: relative;
 }
 
 .policy_header{

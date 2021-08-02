@@ -1,18 +1,26 @@
 .link-bar{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0 auto;
     
    
 }
-
- @media only screen and (max-width:600px){
-     .link-bar{
-         margin-bottom:50px;
+ @media only screen and (max-width:542px){
+     .links a{
+         font-size: 10px;
         }
+ }
+
+ @media only screen and (max-width:450px){
+     .link-bar{
+         margin-bottom:100px;
+         margin-top: 60px;
+         height:250px;
+        
+         
+    }
  }
 
 .links{

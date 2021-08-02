@@ -46,6 +46,11 @@ display: flex;
 flex-direction: column;
 text-align: left;
 margin-left: 60px;
+
+@media only screen and (max-width:300px){
+    margin:0;
+}
+
 `
 
 export const Row = styled.div`

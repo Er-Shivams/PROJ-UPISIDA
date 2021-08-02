@@ -15,6 +15,7 @@
     
     
 }
+
 @media (max-width:600px){
         .main1{
             flex-direction:column;
@@ -24,13 +25,7 @@
         }
 
     }
-/* .img-container{
-    background-image: url("./assets/images/image1.png");
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vh;
 
-} */
 .content{
     backdrop-filter: blur(8px);
     color: black;
@@ -58,7 +53,7 @@
     position:relative;
     width:20rem;
     height:auto;
-    margin:10% 10rem 10% 15%;
+    margin:10% 8rem 10% 12%;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
     bottom:2rem;
@@ -99,10 +94,13 @@
         }
         
     }
-    @media (max-width:600px){
+    @media (max-width:760px){
         .cardImg{
                margin-left: 0px;
                margin-top: 0px;
+        }
+        .news_tendor{
+            margin: 50px auto 50px;
         }
     }
 .cardImg{

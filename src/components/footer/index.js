@@ -17,7 +17,6 @@ Footer.Row = function FooterRow({children, ...restProps}) {
 }
 
 
-
 Footer.Column = function FooterColumn({children, ...restProps}) {
     return <Column {...restProps}>{children}</Column>
 }

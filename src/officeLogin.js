@@ -8,9 +8,6 @@ import  FooterContainer  from "./containers/footer";
 export const Login = () =>  {
     return (
         <>
-                <Heading >
-                    <LinkBar/>
-                </Heading>
                 <div className="img-div2">
                     <div className="img-content2">
                             <div className="d-flex justify-content-center mt-4">
@@ -45,18 +42,6 @@ export const Login = () =>  {
     )
 }
 
-const Heading = styled.div`
-    margin-top:4.1%;
-    background-color:#F9FBFF;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-    
-    
-`
+
 
 
