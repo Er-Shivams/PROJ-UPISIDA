@@ -13,7 +13,7 @@ import {Login} from "./officeLogin.js";
 import Policies from "./Policies.js";
 import FlagshipProjects from "./FlagshipProjects.js";
 import OfficeOrders from "./OfficeOrders.js";
-
+import LinkBar from './components/LinkBar';
 const App = () => {
   
   return (
@@ -21,12 +21,22 @@ const App = () => {
      <Router> 
      <CContainer>
             <Navbar />
+              <Heading >
+               <LinkBar/>
+              </Heading>
              <Switch>
                 <Route exact path="/" render={()=>{
-                  return(<>
+                  return(
+                          <>
                           <Background />
                           <Body />
                           <Investor/>
+                          <FooterContainer 
+                              title={["top",'Services','About','Important Links']}
+                              link1={['Industrial Info','GIS','E-Services','Office Orders','Resource Centre','Available Plot']}
+                              link2= {['Online Services','Track Application','News Letter','Investment Guide','Warehousing and Logistics']}
+                              link3= {['UPSIDA','Policies']}
+                              link4= {['Infrastructure & Industrial Devlopment Department','Goverment of Uttar Pradesh','Tenders Uttar Pradesh']}/>
                           </>
                         )}}>
                 </Route>
@@ -51,7 +61,9 @@ const App = () => {
 
             </Switch>
              
-        <FooterContainer/>
+                
+            
+        
     </CContainer>     
     </Router> 
     
@@ -66,8 +78,18 @@ export default App;
 const CContainer = styled.div`
  height: auto;
  width: auto;
-
-
+ 
 `;
 
-
+const Heading = styled.div`
+    ${'' /* margin-top:4.2%; */}
+    background-color:#F9FBFF;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:94px;
+    
+`

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const columns = [{
     dataField: 'id',
     text: 'SI.No.',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'5%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -16,7 +15,7 @@ const columns = [{
     dataField: 'ref_no',
     text: 'Order Ref. No.',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'13%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -26,7 +25,7 @@ const columns = [{
     dataField: 'category',
     text: 'Category',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'5%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow", };
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -36,7 +35,7 @@ const columns = [{
     dataField: 'year',
     text: 'Issue Year',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'4%', padding:'0 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -46,7 +45,7 @@ const columns = [{
     dataField: 'date',
     text: 'Issue Date',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'4%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow", };
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -56,7 +55,7 @@ const columns = [{
     dataField: 'section',
     text: 'Section',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'10%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems:'center'}
@@ -66,7 +65,7 @@ const columns = [{
     dataField: 'subject',
     text: 'Subject',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'30%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -76,7 +75,7 @@ const columns = [{
     dataField: 'description',
     text: 'Description',
     headerStyle: (colum, colIndex) => {
-        return {backgroundColor:"Yellow", width:'15%', padding:'auto 10px',margin:'0'};
+        return {backgroundColor:"Yellow",};
     },
     style: (colum,colIndex) =>{
         return{alignItems: 'center'}
@@ -97,7 +96,7 @@ const columns = [{
 
 const OrderTable = props =>{
     return (
-      <div>
+      <div style={{margin: 'auto'}}>
       <BootstrapTable
           striped
           hover

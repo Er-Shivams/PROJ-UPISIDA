@@ -4,9 +4,10 @@ import LinkBar from './components/LinkBar';
 import {Form, Button} from 'react-bootstrap'
 import "./officeLogin.css";
 import {Link} from "react-router-dom";
+import  FooterContainer  from "./containers/footer";
 export const Login = () =>  {
     return (
-        <div>
+        <>
                 <Heading >
                     <LinkBar/>
                 </Heading>
@@ -33,7 +34,14 @@ export const Login = () =>  {
                                 
                     </div>
                 </div>
-        </div>
+                <FooterContainer 
+                    title={['Top Catagories','Services','About','Important Links']}
+                    link1={['Industrial Info','GIS','E-Services','Office Orders','Resource Centre','Available Plot']}
+                    link2= {['Online Services','Track Application','News Letter','Investment Guide','Warehousing and Logistics']}
+                    link3= {['UPSIDA','Policies']}
+                    link4= {['Infrastructure & Industrial Devlopment Department','Goverment of Uttar Pradesh','Tenders Uttar Pradesh']}/>
+                
+        </>
     )
 }
 
@@ -51,15 +59,4 @@ const Heading = styled.div`
     
 `
 
-const Para = styled.h4`
-    margin-top:9%;
-    width: 100%;
-    height:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #E5FFE1;
-    font-size:18px;
-
-`
 

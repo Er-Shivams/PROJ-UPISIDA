@@ -5,7 +5,7 @@ import Button from "../util/Button";
 const Background = () =>{
   return (
     <div className="img-div">
-                <div className="info">
+                <div className="Para">
                 <marquee style={{color:"black"}}>
                   🔴 Expression of Interest (EOI) For Setting up of Hospitals, Schools, Flatted Factories, Warehouses, Industries, Group Housing, Sports Stadium, Golf Course with Club House, 5 Star Hotels or any other Real Estate Project in the Future Smart Cities - Trans Ganga City, Unnao near Kanpur & Saraswati Hi-Tech City, Prayagraj
                 </marquee>

@@ -1,17 +1,15 @@
 import React from 'react'
 import styled from "styled-components";
-import LinkBar from './components/LinkBar';
 import "./eServices.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form, Button} from 'react-bootstrap'
+import  FooterContainer  from "./containers/footer";
 export const  EServices = () => {
     return (
-        <div>
+        <>
 
             
-           <Heading >
-               <LinkBar/>
-           </Heading>
+           
             
                 <Para>
                 <marquee>
@@ -107,32 +105,26 @@ export const  EServices = () => {
                 
                 
             </div>
+            <FooterContainer 
+                title={['Land Allotment','UPSIDA','Security & Privacy','Public Forum']}
+                link1={['Industrial Land Allotement Form','Checklist Document','Opening Manual 2011','SOP For Industrial Land Allotment']}
+                link2= {['Annexure A, Inspection Procedure Checklist & Performa','Land Regulation 2004 after 26 UPSIDA','Building Regulation 2004 after 26 UPSIDA','UPSIDA Byelaws','SOP For Computerised Allocation of Inspectors']}
+                link3= {['Terms Of Use','Privacy Policy','Return / Refund Policy','Store Locations']}
+                link4= {['View Allotment Details','View Inspection Document','View BuildingPlan Document','View Service TimeLine']}/>
+                          
             
             
-            
-        </div>
+        </>
         
     )
 }
 
 
-const Heading = styled.div`
-    margin-top:4.2%;
-    background-color:#F9FBFF;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-`
-
 const Para = styled.h4`
-    margin-top:9%;
+    margin-top:180px;
     margin-bottom:0;
     width: 100%;
-    height:50px;
+    height:40px;
     display: flex;
     justify-content: center;
     align-items: center;

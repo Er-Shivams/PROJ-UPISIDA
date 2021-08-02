@@ -8,7 +8,7 @@ const Navbar = () => {
     
     <Nav >
       
-    <Logo href="./About.js">  <img src={logo} alt = "Logo"/> </Logo>
+    <Logo href="/">  <img src={logo} alt = "Logo"/> </Logo>
    
      
       <Tiles onClick={() => setIsOpen(!isOpen)}>
@@ -18,11 +18,11 @@ const Navbar = () => {
       </Tiles>
       
       <Menu isOpen={isOpen}>
-        <Link to="/"><MenuLink to="">Home</MenuLink></Link>
-        <Link to="/about"> <MenuLink >About</MenuLink></Link>
-        <Link><MenuLink to="">Contact Us</MenuLink></Link>                
-        <Link ><MenuLink to="">Web Mail</MenuLink></Link>
-        <Link to="/officeLogin"><MenuLink><Button> Office Login </Button></MenuLink></Link>
+        <Link style={{textDecoration: "none"}} to="/"><MenuLink to="">Home</MenuLink></Link>
+        <Link style={{textDecoration: "none"}} to="/about"> <MenuLink >About</MenuLink></Link>
+        <Link style={{textDecoration: "none"}}><MenuLink to="">Contact Us</MenuLink></Link>                
+        <Link style={{textDecoration: "none"}}><MenuLink to="">Web Mail</MenuLink></Link>
+        <Link style={{textDecoration: "none"}} to="/officeLogin"><MenuLink><Button> Office Login </Button></MenuLink></Link>
       </Menu>
     </Nav>
          
@@ -45,7 +45,7 @@ const Button = styled.button`
   height:2.5rem;
   border-radius:3px;
   &:hover {
-    color: #35323e;
+    color: red;
   }
 `;
 
@@ -53,12 +53,12 @@ const MenuLink = styled.a`
   padding: 2rem 2rem;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
   color: #bfbfbf;
   transition: all 0.3s ease-in;
   font-size: 1rem;
   font-weight: bold;
   font-family: Poppins;
+  text-decoration: none;
   &:hover {
     color: #35323e;
   }

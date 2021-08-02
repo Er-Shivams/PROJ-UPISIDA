@@ -37,7 +37,6 @@ font-size: 14px;
     padding-top: 40px;
     padding-bottom: 20px
 }
-
 `
 
 
@@ -56,8 +55,6 @@ export const Row = styled.div`
  grid-gap: 100px;
  width: 100%;
  margin: 50px auto 50px 0;
-
-
  @media (max-width: 3000px) {
      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
  }
@@ -67,14 +64,13 @@ export const Row = styled.div`
      
  }
 `
-
 export const Link = styled.div`
  color: #000000;
  margin-bottom: 20px;
  font-size: 18px;
  text-decoration: none;
  &:hover {
-     color: #ff9c00;
+     color: #082A91;
      transition: 200ms ease-in;
  }
 `
@@ -84,4 +80,5 @@ export const Title = styled.div`
  color: #000000;
  margin-bottom: 40px;
  font-weight: bold;
+ font-size: 23px;
 `

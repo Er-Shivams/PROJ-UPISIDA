@@ -1,16 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
+
 .container1 {
   background-image: url("../assets/images/rect.png");
   width: 100%;
-  margin: 50px 0;
+  /* margin: 50px 0; */
   background-size: cover;
   background-position: center;
   display: flex;

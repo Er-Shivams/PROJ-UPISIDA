@@ -1,6 +1,6 @@
 .office_order{
     width: 90%;
-    margin: 15% 5% 10% 5%;
+    margin: 300px 5% 100px 5%;
 }
 
 .order_search{
@@ -23,10 +23,11 @@
 }
 
 .search_bar{
-    width: 25%;
+    width: 250px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
+    margin-left: 0px;
 }
 
 .prev_next {
@@ -49,13 +50,8 @@
     
 }
 
-.search_bar h3{
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 5px 10px 15px 0;
-}
-
 .office_button button{
+    width:180px;
     height: 30px;
     color: rgb(105, 101, 101);
     border: rgb(99, 96, 96) 1px solid;
@@ -70,7 +66,7 @@
 }
 
 .search_bar input{
-    width:100%;
+    width: 300px;
     height: 25px;
     margin: 5px 0 10px 0;
 }

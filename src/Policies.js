@@ -3,6 +3,7 @@ import PolicyComp from './components/PolicyComp.js';
 import './Policies.css';
 import styled from "styled-components";
 import LinkBar from './components/LinkBar';
+import  FooterContainer  from "./containers/footer";
 const IndustrialInvestment = [
   { image: "https://www.onlineupsidc.com/images/policy/p11.jpg", name: "Industrial Investment & Employment Promotion Policy of U.P. 2017 - (English)"},
   { image: "https://www.onlineupsidc.com/images/policy/p11.jpg", name: "Industrial Investment & Employment Promotion Policy of U.P. 2017 - (Hindi)"}
@@ -55,25 +56,33 @@ const PrivatePark = [
 
 const Policies = () =>{
     return (
-      <div>
+      <>
             <Heading >
                <LinkBar/>
             </Heading>
-      <div className="policies">
-         <div className="policy_header">
-           <h1>Policies</h1>
-         </div>
-         <PolicyComp head="Industrial & Industrial Investment Policy" cards={IndustrialInvestment} />
-         <PolicyComp head="U.P. Warehousing and Logistic Policy 2018, Policy Rules and Amendments" cards={WareHousing} />
-         <PolicyComp head="Textile Policy" cards={Textile} />
-         <PolicyComp head="Land Acquisition Policy" cards={LandAcquisition} />
-         <PolicyComp head="UP Electronics Manufacturing Policy" cards={Electronics} />
-         <PolicyComp head="Uttar Pradesh Information Technology & Startup Policy 2016" cards={ITstartup} />
-         <PolicyComp head="Food Processing Industrial Policy - 2012" cards={FoodProcessing} />
-         <PolicyComp head="Solar Power Policy - 2013" cards={SolarPower} />
-         <PolicyComp head="Private Park Criteria Amendment & Scheme" cards={PrivatePark} />
-      </div>
-      </div>
+            <div className="policies">
+              <div className="policy_header">
+                <h1>Policies</h1>
+              </div>
+              <PolicyComp head="Industrial & Industrial Investment Policy" cards={IndustrialInvestment} />
+              <PolicyComp head="U.P. Warehousing and Logistic Policy 2018, Policy Rules and Amendments" cards={WareHousing} />
+              <PolicyComp head="Textile Policy" cards={Textile} />
+              <PolicyComp head="Land Acquisition Policy" cards={LandAcquisition} />
+              <PolicyComp head="UP Electronics Manufacturing Policy" cards={Electronics} />
+              <PolicyComp head="Uttar Pradesh Information Technology & Startup Policy 2016" cards={ITstartup} />
+              <PolicyComp head="Food Processing Industrial Policy - 2012" cards={FoodProcessing} />
+              <PolicyComp head="Solar Power Policy - 2013" cards={SolarPower} />
+              <PolicyComp head="Private Park Criteria Amendment & Scheme" cards={PrivatePark} />
+            </div>
+              <FooterContainer 
+                title={['Top Catagories','Services','About','Important Links']}
+                link1={['Industrial Info','GIS','E-Services','Office Orders','Resource Centre','Available Plot']}
+                link2= {['Online Services','Track Application','News Letter','Investment Guide','Warehousing and Logistics']}
+                link3= {['UPSIDA','Policies']}
+                link4= {['Infrastructure & Industrial Devlopment Department','Goverment of Uttar Pradesh','Tenders Uttar Pradesh']}/>
+        </>
+
+     
     );
 };
 

@@ -12,7 +12,7 @@ import './Body.css';
 const Body = () => {
   return (
     <div className="body-div">
-      <LinkBar />
+  
       <Services />
       <KeyPeople />
     </div>

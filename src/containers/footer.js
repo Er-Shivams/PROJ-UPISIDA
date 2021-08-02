@@ -4,53 +4,63 @@ import image from '../containers/fimg.png'
 import styled from "styled-components";
 import image1 from '../containers/face.png'
 import image2 from '../containers/twitter.png'
-function FooterContainer(){
+import {Link} from "react-router-dom";
+function FooterContainer(props){
     return(
         <Footer>
             <Footer.Wrapper>
                 <Footer.Row>
                     <Footer.Column>
                       
-                        
                         <Button> Office login</Button>
                         <Button>Web Mail</Button>
                
-                    <img height="200" width="200" style={{marginTop:"15%"}} src={image}/>
+                        <img height="200" width="200" style={{marginTop:"15%"}} src={image}/>
                      
 
                     </Footer.Column>
-                    
-                    {/* paddingLeft: "5%", */}
                 
-                <Footer.Column >
-                    <Footer.Title>Top Categories</Footer.Title>
-                    <Footer.Link href="#">industrial info</Footer.Link>
-                    <Footer.Link href="#">GIS</Footer.Link>
-                    <Footer.Link href="#">E-Services</Footer.Link>
-                    <Footer.Link href="#">Office Orders</Footer.Link>
-                    <Footer.Link href="#">Resource Centre</Footer.Link>
-                    <Footer.Link href="#">Available Plot</Footer.Link>
+                <Footer.Column>
+                    
+                    <Footer.Title>{props.title[0]}</Footer.Title>
+                        {props.link1.map((link, index) =>
+                            <Link key={index} to="/" style={{textDecoration:"none"}}><Footer.Link> {link}  </Footer.Link></Link>
+                        )}
+                           
+                   
+                    
+                    {/* <Footer.Link href="#">GIS</Footer.Link> */}
+                    {/* <Footer.Link href="#">E-Services</Footer.Link> */}
+                    {/* <Footer.Link href="#">Office Orders</Footer.Link> */}
+                    {/* <Footer.Link href="#">Resource Centre</Footer.Link> */}
+                    {/* <Footer.Link href="#">Available Plot</Footer.Link> */}
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Services</Footer.Title>
-                    <Footer.Link href="#">Online Services</Footer.Link>
-                    <Footer.Link href="#">Track Application</Footer.Link>
+                    <Footer.Title>{props.title[1]}</Footer.Title>
+                    {props.link2.map((link, index) =>
+                            <Link key={index} to="/" style={{textDecoration:"none"}}><Footer.Link> {link}  </Footer.Link></Link>
+                        )}
+                    {/* <Footer.Link href="#">Track Application</Footer.Link>
                     <Footer.Link href="#">News Letter</Footer.Link>
                     <Footer.Link href="#">Investment Guide</Footer.Link>
-                    <Footer.Link href="#">Warehousing and Logistics</Footer.Link>
+                    <Footer.Link href="#">Warehousing and Logistics</Footer.Link> */}
                     
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>About</Footer.Title>
-                    <Footer.Link href="#">UPSIDA</Footer.Link>
-                    <Footer.Link href="#">Policies</Footer.Link>
+                    <Footer.Title>{props.title[2]}</Footer.Title>
+                    {props.link3.map((link, index) =>
+                            <Link key={index} to="/" style={{textDecoration:"none"}}><Footer.Link> {link}  </Footer.Link></Link>
+                        )}
+                    {/* <Footer.Link href="#">Policies</Footer.Link> */}
                     
                 </Footer.Column>
                 <Footer.Column>
-                    <Footer.Title>Important Links</Footer.Title>
-                    <Footer.Link href="#">INFRASTRUCTURE & INDUSTRIAL DEVELOPMENT DEPARTMENT</Footer.Link>
-                    <Footer.Link href="#">Government of Uttar Pradesh</Footer.Link>
-                    <Footer.Link href="#">Tenders Uttar Pradesh</Footer.Link>
+                    <Footer.Title>{props.title[3]}</Footer.Title>
+                    {props.link4.map((link, index) =>
+                            <Link key={index} to="/" style={{textDecoration:"none"}}><Footer.Link> {link}  </Footer.Link></Link>
+                        )}
+                    {/* <Footer.Link href="#">Government of Uttar Pradesh</Footer.Link>
+                    <Footer.Link href="#">Tenders Uttar Pradesh</Footer.Link> */}
                     <Footer.Link ><h3>Follow us</h3></Footer.Link>
                     <Footer.Link><img style={{width:'40px'}} href="#" src={image1}/><img  style={{width: '30px'}} href="#" src={image2}/> </Footer.Link>
                 </Footer.Column>
