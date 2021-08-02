@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
 import Body from "./Body";
 import Investor from "./Investor"
 import Background from "./components/Background.js";
-import { jsx } from "@emotion/react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import  FooterContainer  from "./containers/footer";
 import About from "./About.js"
@@ -33,7 +31,7 @@ const App = () => {
                           <Body />
                           <Investor/>
                           <FooterContainer 
-                              title={["top",'Services','About','Important Links']}
+                              title={["Top Catagories",'Services','About','Important Links']}
                               link1={['Industrial Info','GIS','E-Services','Office Orders','Resource Centre','Available Plot']}
                               link2= {['Online Services','Track Application','News Letter','Investment Guide','Warehousing and Logistics']}
                               link3= {['UPSIDA','Policies']}

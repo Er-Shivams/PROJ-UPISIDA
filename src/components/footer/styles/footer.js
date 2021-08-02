@@ -4,26 +4,16 @@ export const Container = styled.div`
  width:100%;
  top: 0;
  position:sticky;
-
 `
 
-
-  
 export const Wrapper = styled.div`
 display: flex;
 flex-direction : column;
-max-width: 3000px;
 margin: auto;
 height: auto;
 justify-content: column;
-
-
-
-
-
 `
 
-// radial-gradient(circle, rgba(0, 0, 255, 1 ) 0%, rgba(0, 0, 255, 1) 100% , width=1440)
 export const Base = styled.div`
 background-color: #082A91;
 width: 100%;     

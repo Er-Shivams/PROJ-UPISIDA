@@ -1,10 +1,14 @@
 import React from 'react'
 import './About.css';
-
 import image1 from './containers/img1.png'
 import image2 from './containers/img2.png'
 import image3 from './containers/img3.png'
- 
+ import InvestPlaces from "./InvestPlaces";
+import "./investor.css"
+import  FooterContainer  from "./containers/footer";
+
+
+
 const About=() =>{
     return(
         <div className="about">
@@ -29,10 +33,20 @@ const About=() =>{
             </div>
             <div className="about_footer">
                 <h2>Our Recent works</h2>
-                <img src={image1} alt="Not loaded" />
+                <InvestPlaces info="Plot Allotation" backImage={image1}/>
+                <InvestPlaces info="Renovation Chakeri Industrial Area" backImage={image2}/>
+                <InvestPlaces info="#UPSIDAOxygenGrid" backImage={image3}/>
+                {/* <img src={image1} alt="Not loaded" />
                 <img src={image2} alt="Not loaded" />
-                <img src={image3} alt="Not loaded" />
+                <img src={image3} alt="Not loaded" /> */}
             </div>
+
+            <FooterContainer 
+                title={["Top Catagories",'Services','About','Important Links']}
+                link1={['Industrial Info','GIS','E-Services','Office Orders','Resource Centre','Available Plot']}
+                link2= {['Online Services','Track Application','News Letter','Investment Guide','Warehousing and Logistics']}
+                link3= {['UPSIDA','Policies']}
+                link4= {['Infrastructure & Industrial Devlopment Department','Goverment of Uttar Pradesh','Tenders Uttar Pradesh']}/>
         </div>
     );
 }
