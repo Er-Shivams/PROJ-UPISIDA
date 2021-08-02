@@ -18,15 +18,15 @@ export const  EServices = () => {
                 </Para>
             
             <div className="img-div1">
-                <div className="img-content1">
-                    <div className="Form">
+                {/* <div className="img-content1"> */}
+                    <div className="main_Form">
                             <div className="options">
                                 <Button  style={{width: "50%",backgroundColor: "#F3F6FA",border:"0"}}  variant="primary"  type="submit">
                                 <p className="" style={{fontFamily:"inter", fontStyle:"normal", fontWeight:"bold", color:"black"}}>UPSIDA User</p></Button>
                                 <Button  style={{width: "50%",backgroundColor: "#ffffff", border:"0"}}   type="submit">
                                 <p style={{fontFamily:"inter", fontStyle:"normal", fontWeight:"bold", color:"black"}}>Other Dept </p></Button>
                             </div>
-                            <Form>
+                            <Form classNam="login_form">
                                 <Form.Group className="mb-3 mt-5 mx-3" controlId="formBasicEmail">
                                     <Form.Control type="email" placeholder="Enter username" />
                                 </Form.Group>
@@ -43,19 +43,19 @@ export const  EServices = () => {
                                 <Form.Group className="mb-3 mx-3" controlId="formBasicPassword">
                                     <img height="100" width="200" src="https://www.gdatasoftware.com/fileadmin/_processed_/f/4/G_DATA_Blog_CaptchaDissolve_Preview_52a6e13490.jpg" alt="Captcha"/>
                                 </Form.Group>
-                                <Button style={{width: "92%",backgroundColor: "#082A91"}} variant="primary"  type="submit">
+                                <Button style={{width: "92%", marginRight:"15px",backgroundColor: "#082A91"}} variant="primary"  type="submit">
                                     Login
                                 </Button>
                                 
                         </Form>
-                    </div>    
+                    {/* </div>     */}
                 </div>
                 
             </div>
             <div className="buttonDiv">
                 <div className="buttonContainer">
                     <Button style={{backgroundColor:"#082A91"}}  className="groupButtons" variant="primary"  type="submit">
-                        Application Under Warehousing & Logistic Policy 2018
+                        Application Under Warehousing...
                     </Button>
                     <Button  style={{backgroundColor:"#082A91"}}  className="groupButtons" variant="primary"  type="submit">
                         Apply for Occupancy Certificate 
@@ -102,7 +102,6 @@ export const  EServices = () => {
                     </Button>
                     
                 </div>
-                
                 
             </div>
             <FooterContainer 

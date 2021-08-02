@@ -36,9 +36,6 @@ const About=() =>{
                 <InvestPlaces info="Plot Allotation" backImage={image1}/>
                 <InvestPlaces info="Renovation Chakeri Industrial Area" backImage={image2}/>
                 <InvestPlaces info="#UPSIDAOxygenGrid" backImage={image3}/>
-                {/* <img src={image1} alt="Not loaded" />
-                <img src={image2} alt="Not loaded" />
-                <img src={image3} alt="Not loaded" /> */}
             </div>
 
             <FooterContainer 

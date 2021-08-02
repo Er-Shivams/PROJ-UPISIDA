@@ -3,13 +3,12 @@
     background-image: url("./assets/images/yogijiFrame.png");
     height: 55rem;
     width: 100%;
-    margin: 0px 0 0 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
 }
-.img-content1{
+/* .img-content1{
     width: 30%;
     height: 70%;
     position: absolute;
@@ -18,19 +17,22 @@
     color: azure;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-}
-.Form{
+} */
+
+.main_Form{
     position: relative;
+    left:200px;
+    top:150px;
     width: 400px;
     height: 452px;
-    margin: 200px;
     background: #F3F6FA;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
     border-radius: 15px;   
 }
-@media screen and (max-width:600px){
-    .Form{
-    margin-left:20%;
+@media (max-width: 760px){
+    .main_Form{
+        left:10%;
+        width:300px;
     }
 }
 
@@ -71,3 +73,24 @@ form ::placeholder {
   font-size: 14px;
   
 }
+@media screen and (max-width: 900px){
+    .buttonContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .buttonDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 23rem 0;
+    }
+    .groupButtons{
+        width: 80%;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+}
+
