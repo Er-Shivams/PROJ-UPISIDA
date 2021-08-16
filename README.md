@@ -1,5 +1,5 @@
-# Redesigned UPSIDA WEBSITE(Hackathon):
-Link Coming Soon
+# Redesigned and Developed UPSIDA Website(Hackathon)
+Link Coming Soon....
 
 
 # Getting Started with Create React App
